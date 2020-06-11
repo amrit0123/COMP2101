@@ -31,6 +31,7 @@ echo ""
 # commands to display a third title
 # commands to make a list of the 10 biggest files
 # sort/ format whatever to display the list properly
+#setting IDs and printing 10 largest files
 echo "Setgid files:"
 echo "============="
 find / -type f -executable -perm -9000 -ls 2>/dev/null | sort -k 7

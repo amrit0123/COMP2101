@@ -2,6 +2,7 @@
 # My third script - helloworldugly.sh
 # This script displays the string “Hello World!”
 # This is a silly way of creating the output text by starting with something else and stream editing it in a pipeline
+#printing hello world and process id using different commands
 echo -n "helb wold" |
   sed -e "s/b/o/g" -e "s/l/ll/" -e "s/ol/orl/" |
   tr "h" "H"|
