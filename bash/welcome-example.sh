@@ -17,9 +17,38 @@
 ###############
 # Variables   #
 ###############
-title="Overlord"
-USER="Amritpal"
-hostname=$(hostname)
+#asking the name of the user and therefore getting hostname
+read -p "Please give me your name" USER
+hostname=$( hostname )
+
+#setting the date in HH.MM.SS format
+date=$(( "date + %I.%M.%S %p" ))
+
+#describing the day
+day=$(( date +%A ))
+
+#giving th titles to the weekdays
+if [ $day == "Monday" ]
+then
+  title="peaceful"
+elif [ $day == "Tuesday"  ]
+then
+  title="harmony"
+elif [ $day == "Wednesday" ]
+then
+  title="smile"
+elif [ $day == "Thursday" ]
+then
+  title="purity"
+elif [ $day == "Friday" ]
+then
+  title="inquistive"
+elif [ $day == "Saturday" ]
+then
+  title="astonished"
+elif [ $day == "Sunday" ]
+then
+  title="terrific"
 
 ###############
 # Main        #
@@ -27,5 +56,5 @@ hostname=$(hostname)
 cat <<EOF
 
 Welcome to planet $hostname, "$title $USER!"
-
+It is $date on $day
 EOF
