@@ -81,6 +81,7 @@ if [ $verboseMode = 1 ]; then
 else
   echo "Verbose mode is Off."
 fi
+
 if [ $debugMode -gt 0 ]; then
   echo "Debug Mode is On with debug level $debugMode."
 else
