@@ -26,6 +26,5 @@ read -p "Give me a number from 1 to 10: " userguess # ask for a guess
 while [ $userguess != $secretnumber ]; do # ask repeatedly until they get it right
   read -p "Give me a number from 1 to 10: " userguess # ask for another guess
 done
-
 echo "You got it! Have a milkdud."
 
